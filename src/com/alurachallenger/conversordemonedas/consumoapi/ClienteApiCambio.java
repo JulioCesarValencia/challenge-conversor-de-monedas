@@ -1,6 +1,7 @@
 package com.alurachallenger.conversordemonedas.consumoapi;
 
 import com.google.gson.Gson;
+import com.alurachallenger.conversordemonedas.excepciones.ConversorExcepcion;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -25,11 +26,17 @@ public class ClienteApiCambio {
             HttpResponse<String> response = client
                     .send(request, HttpResponse.BodyHandlers.ofString());
 
-            return new Gson().fromJson(response.body(), ApiCambioResponse.class);
+            if (response.statusCode() != 200) {
+                throw new ConversorExcepcion("Error en la API: Código " + response.statusCode());
+            }
+                return new Gson().fromJson(response.body(), ApiCambioResponse.class);
 
-        } catch (Exception e) {
-            throw new RuntimeException("Error al obtener datos de la API");
 
+            } catch (ConversorExcepcion e) {
+                throw e;
+
+            } catch (Exception e) {
+                throw new ConversorExcepcion("Error al obtener datos de la API: " + e.getMessage(), e);
         }
 
 
