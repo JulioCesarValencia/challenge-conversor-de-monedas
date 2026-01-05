@@ -6,6 +6,6 @@ public record Conversion(String monedaBase, String monedaDestino,
                          double cantidad, double resultado, LocalDateTime fecha) {
     @Override
     public String toString() {
-        return cantidad + " " + monedaBase + " => " + resultado + " " + monedaDestino;
+        return  "[" + fecha + "]" + cantidad + " " + monedaBase + " => " + resultado + " " + monedaDestino;
     }
 }
