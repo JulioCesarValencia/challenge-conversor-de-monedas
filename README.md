@@ -1,10 +1,14 @@
-💱 Conversor de Monedas - Alura Challenge
+# 💱 Conversor de Monedas - Alura Challenge
 <p align="center">
-  <img src="assets/images/bannerconversor.png" alt="Banner de bienvenida" width="600">
+  <img src="assets/images/bannerconversor.png" alt="Banner de bienvenida" width="120">
+</p>
+<p align="center">
+  <img src="assets/gif/demo-conversor.gif" alt="Demo del Conversor de Monedas" width="600">
 </p>
 ¡Bienvenido al Conversor de Monedas! Este proyecto es una aplicación Java que permite convertir valores entre diferentes monedas utilizando tasas de cambio actualizadas desde una API externa. Es ideal para quienes necesitan realizar conversiones rápidas y precisas entre monedas internacionales.
 
-🚀 Características
+
+## 🚀 Características
 Interfaz de consola interactiva: El usuario puede seleccionar entre varias opciones de conversión.
 Soporte para múltiples monedas:
 Dólar estadounidense (USD)
@@ -20,7 +24,7 @@ Tasas de cambio actualizadas: Los datos se obtienen en tiempo real desde la API 
 Gestión de errores: Manejo robusto de excepciones para entradas inválidas y errores en la API.
 
 
-🛠️ Tecnologías utilizadas
+## 🛠️ Tecnologías utilizadas
 Lenguaje: Java 17
 Librerías:
 Gson: Para el manejo de JSON.
@@ -28,12 +32,13 @@ java.net.http: Para realizar solicitudes HTTP.
 API: ExchangeRate-API
 
 
-📋 Requisitos previos
+## 📋 Requisitos previos
 Antes de ejecutar el proyecto, asegúrate de tener instalado lo siguiente:
 Java 17 o superior.
 Maven (opcional, si deseas gestionar dependencias).
 
-⚙️ Instalación y ejecución
+
+## ⚙️ Instalación y ejecución
 Clona este repositorio:
 git clone https://github.com/tu-usuario/conversor-de-monedas.git
 cd conversor-de-monedas
@@ -44,7 +49,8 @@ javac -d bin -sourcepath src src/com/alurachallenger/conversordemonedas/app/Prin
 Ejecuta la aplicación:
 java -cp bin com.alurachallenger.conversordemonedas.app.Principal
 
-🖥️ Uso
+
+## 🖥️ Uso
 1. Al ejecutar la aplicación, se mostrará un menú interactivo con las opciones de conversión disponibles:
 
   ****************Bienvenido al Conversor de Monedas***************************
@@ -65,7 +71,8 @@ Elija una opción válida:
 3. Ingresa el monto que deseas convertir.
 4. Obtendrás el resultado de la conversión en tiempo real.
 
-📂 Estructura del proyecto
+
+## 📂 Estructura del proyecto
 El proyecto está organizado en los siguientes paquetes:
 com.alurachallenger.conversordemonedas.app: Contiene la clase principal Principal que ejecuta la aplicación.
 com.alurachallenger.conversordemonedas.consumoapi: Maneja la comunicación con la API externa.
@@ -73,14 +80,15 @@ com.alurachallenger.conversordemonedas.servicios: Contiene la lógica de negocio
 com.alurachallenger.conversordemonedas.excepciones: Define excepciones personalizadas para el manejo de errores.
 com.alurachallenger.conversordemonedas.modelo: Define modelos de datos como Moneda y ApiCambioResponse.
 
-🛡️ Manejo de errores
+
+## 🛡️ Manejo de errores
 El proyecto incluye un manejo robusto de errores para garantizar una experiencia de usuario fluida:
 Errores de entrada: Si el usuario ingresa un valor no válido, se le pedirá que intente nuevamente.
 Errores de API: Si la API no responde o devuelve un error, se mostrará un mensaje claro al usuario.
 Validaciones: Se valida que los valores ingresados sean mayores a cero y que las monedas seleccionadas sean compatibles.
 
 
-🤝 Contribuciones
+## 🤝 Contribuciones
 ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
 
 1. Haz un fork del repositorio.
@@ -96,10 +104,25 @@ git push origin nueva-funcionalidad
 
 5. Abre un Pull Request en este repositorio
 
-📜 Licencia
+## 📜 Licencia
 Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
 
-🌟 Agradecimientos
+## 🌟 Agradecimientos
 Este proyecto fue desarrollado como parte del Challenge de Alura Latam. ¡Gracias por la oportunidad de aprender y crecer como desarrollador!
 
+## 👨‍💻 Autor
 
+<p align="center">
+  <img src="assets/images/dev.jpg" alt="Foto de Julio César Valencia" width="120">
+</p>
+
+<p align="center">
+  <strong>Julio César Valencia</strong><br>
+  Desarrollador Java | Backend
+</p>
+
+<p align="center">
+  📧 <a href="mailto:sesarisuma@gmail.com">sesarisuma@gmail.com</a><br>
+  💼 <a href="https://www.linkedin.com/in/julio-cesar-valencia/">LinkedIn</a><br>
+  🐙 <a href="https://github.com/JulioCesarValencia">GitHub</a>
+</p>
