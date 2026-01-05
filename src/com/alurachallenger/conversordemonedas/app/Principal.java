@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2026 Julio Cesar Valencia
+ * Licensed under the MIT License.
+ */
+
 package com.alurachallenger.conversordemonedas.app;
 
 
