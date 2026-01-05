@@ -47,21 +47,59 @@ java -cp bin com.alurachallenger.conversordemonedas.app.Principal
 🖥️ Uso
 1. Al ejecutar la aplicación, se mostrará un menú interactivo con las opciones de conversión disponibles:
 
-*******************Bienvenido al Conversor de Monedas****************************************
+  ****************Bienvenido al Conversor de Monedas***************************
 
-* 1. Dólar (USD) =>> Peso Colombiano (COP)   *
-* 2. Peso Colombiano (COP) =>> Dólar (USD)   *
-* 3. Dólar (USD) =>> Real Brasileño (BRL)    *
-* 4. Real Brasileño (BRL) =>> Dólar (USD)    *
-* 5. Dólar (USD) =>> Peso Mexicano (MXN)     *
-* 6. Peso Mexicano (MXN) =>> Dólar (USD)     *
-* 7. Euro (EUR) =>> Yen Japonés (JPY)        *
-* 8. Libra Esterlina (GBP) =>> Yuan Chino (CNY) *
-* 9. Salir                             *
+   1. Dólar (USD) =>> Peso Colombiano (COP)      
+   2. Peso Colombiano (COP) =>> Dólar (USD)      
+   3. Dólar (USD) =>> Real Brasileño (BRL)       
+   4. Real Brasileño (BRL) =>> Dólar (USD)       
+   5. Dólar (USD) =>> Peso Mexicano (MXN)        
+   6. Peso Mexicano (MXN) =>> Dólar (USD)        
+   7. Euro (EUR) =>> Yen Japonés (JPY)           
+   8. Libra Esterlina (GBP) =>> Yuan Chino (CNY) 
+   9. Salir                                      
 ****************************************
 Elija una opción válida:
+
 2. Selecciona una opción ingresando el número correspondiente.
 3. Ingresa el monto que deseas convertir.
 4. Obtendrás el resultado de la conversión en tiempo real.
+
+📂 Estructura del proyecto
+El proyecto está organizado en los siguientes paquetes:
+com.alurachallenger.conversordemonedas.app: Contiene la clase principal Principal que ejecuta la aplicación.
+com.alurachallenger.conversordemonedas.consumoapi: Maneja la comunicación con la API externa.
+com.alurachallenger.conversordemonedas.servicios: Contiene la lógica de negocio para la conversión de monedas.
+com.alurachallenger.conversordemonedas.excepciones: Define excepciones personalizadas para el manejo de errores.
+com.alurachallenger.conversordemonedas.modelo: Define modelos de datos como Moneda y ApiCambioResponse.
+
+🛡️ Manejo de errores
+El proyecto incluye un manejo robusto de errores para garantizar una experiencia de usuario fluida:
+Errores de entrada: Si el usuario ingresa un valor no válido, se le pedirá que intente nuevamente.
+Errores de API: Si la API no responde o devuelve un error, se mostrará un mensaje claro al usuario.
+Validaciones: Se valida que los valores ingresados sean mayores a cero y que las monedas seleccionadas sean compatibles.
+
+
+🤝 Contribuciones
+¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
+
+1. Haz un fork del repositorio.
+
+2. Crea una rama para tu nueva funcionalidad:
+git checkout -b nueva-funcionalidad
+
+3. Realiza tus cambios y haz un commit:
+git commit -m "Agregada nueva funcionalidad"
+
+4. Envía tus cambios:
+git push origin nueva-funcionalidad
+
+5. Abre un Pull Request en este repositorio
+
+📜 Licencia
+Este proyecto está bajo la licencia MIT. Consulta el archivo LICENSE para más detalles.
+
+🌟 Agradecimientos
+Este proyecto fue desarrollado como parte del Challenge de Alura Latam. ¡Gracias por la oportunidad de aprender y crecer como desarrollador!
 
 
