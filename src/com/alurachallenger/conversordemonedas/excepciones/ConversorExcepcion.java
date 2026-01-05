@@ -5,7 +5,7 @@ public class ConversorExcepcion extends RuntimeException {
         super(mensaje);
     }
 
-    //error original qu provoco un error
+    //error original que provoco el error(causa)
     public ConversorExcepcion(String mensaje, Throwable causa) {
         super(mensaje, causa);
     }

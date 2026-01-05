@@ -55,8 +55,6 @@ public class Principal {
                     default -> System.out.println("Opción no válida");
                 }
 
-
-
             } catch (InputMismatchException e) {
                 System.out.println("Entrada inválida. Debe ingresar un número valido.");
                 lectura.nextLine();
